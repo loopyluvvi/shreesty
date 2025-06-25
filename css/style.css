@@ -1,0 +1,58 @@
+h1 {
+  background-color: rgb(26, 3, 3);
+  color: azure;
+  padding: 20px;
+  text-align: left;
+   text-decoration: none ;
+   text-decoration-line: inherit ;
+   letter-spacing: 2px;
+   text-shadow: 2px 2px 5px burlywood;
+   font-family: Arial, Helvetica, sans-serif;  
+   font-weight: 500;
+   font-variant: small-caps;
+}
+body {
+  background-color: rgb(41, 4, 4);
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/586/091/small/hot-coffee-cup-with-coffee-beans-and-the-ground-powder-of-coffee-on-the-wooden-table-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  border-radius: 10% ;
+  border-width: 10px;
+}
+p {
+  color:white;
+  border: 20px ;
+  margin: inherit;
+  text-align: justify;
+  text-transform: uppercase;
+  text-indent: 60px;
+  word-spacing: 3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-variant: small-caps;
+}
+div{
+  border: dotted;
+  border-width: 3px;
+  margin: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-inline-start: 10px;
+  height: 200px;
+  padding: 10px;
+}
+
+a{
+  font-size: larger;
+  box-shadow: beige;
+  width: 20px;
+  color: blanchedalmond;
+}
+a:hover{
+  color: rgb(71, 6, 6);
+  background-color: blanchedalmond;
+}
+
+

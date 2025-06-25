@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Big Tulip</title>
+  <style>
+    body {
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .tulip {
+      position: relative;
+      width: 100px;
+      height: 160px;
+    }
+
+    .petal {
+      position: absolute;
+      width: 60px;
+      height: 100px;
+      background: linear-gradient(to bottom, #e60073, #cc0066);
+      border-radius: 50% 50% 0 0;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .petal::before,
+    .petal::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 100px;
+      background: linear-gradient(to bottom, #ff3399, #cc0066);
+      border-radius: 50% 50% 0 0;
+      top: 0;
+    }
+
+    .petal::before {
+      left: -40px;
+      transform: rotate(-20deg);
+      z-index: 1;
+    }
+
+    .petal::after {
+      right: -40px;
+      transform: rotate(20deg);
+      z-index: 1;
+    }
+
+    .stem {
+      width: 10px;
+      height: 80px;
+      background: green;
+      margin: 0 auto;
+      margin-top: -10px;
+      border-radius: 5px;
+      z-index: 0;
+      position: relative;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      background: linear-gradient(to right, #228B22, #006400);
+      border-radius: 0 100% 100% 0;
+      left: 10px;
+      top: 40px;
+      transform: rotate(30deg);
+    }
+
+    .leaf::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      background: linear-gradient(to left, #228B22, #006400);
+      border-radius: 100% 0 0 100%;
+      right: 20px;
+      top: 20px;
+      transform: rotate(60deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tulip">
+    <div class="petal"></div>
+    <div class="stem">
+      <div class="leaf"></div>
+    </div>
+  </div>
+
+</body>
+</html>
